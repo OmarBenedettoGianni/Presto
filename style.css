@@ -53,12 +53,12 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 }
 
 .nav-link{
-    color: var(--yellow);
+    color: var(--white);
     font-weight: 700;
 }
 
 .nav-link:hover{
-    color: var(--white);
+    color: var(--black)!important;
 }
 
 .logo{
@@ -79,5 +79,30 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     border: 2px solid var(--yellow);
     border-radius: 50px;
     margin: 0px 15px;
+    padding: 20px 30px;
+    transition: 0.5s;
+}
 
+.btn-custom:hover{
+    color: var(--red);
+    background-color: var(--white);
+    border:  2px solid var(--red);
+    transform: scale(1.1);
+}
+
+/* Positioned */
+.positioned{
+    position: relative;
+    top: -150px;
+}
+
+.col-custom{
+    padding: 10px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.col-custom:hover{
+    transform: scale(1.1);
 }
