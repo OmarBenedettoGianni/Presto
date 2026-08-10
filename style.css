@@ -64,3 +64,20 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 .logo{
     width: 50px;
 }
+
+/* Header */
+.header{
+    background-image:linear-gradient(var(--black),transparent,var(--black)), url(https://mrwallpaper.com/images/hd/assassin-s-creed-logo-in-solid-black-8zt8i290py72u965.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-custom{
+    color: var(--yellow);
+    background-color: var(--black);
+    border: 2px solid var(--yellow);
+    border-radius: 50px;
+    margin: 0px 15px;
+
+}
