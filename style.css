@@ -10,6 +10,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     --yellow: rgb(201, 156, 86);
     --black: rgb(23, 23, 23);
     --white : rgb(219, 223, 223);
+    --red:rgb(132, 1, 1);
 }
 
 .bg-yellow{
@@ -24,6 +25,10 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     background-color: var(--white);
 }
 
+.bg-red{
+    background-color: var(--red);
+}
+
 .text-yellow{
     color: var(--yellow);
 }
@@ -34,4 +39,28 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 
 .text-white{
     color: var(--white);
+}
+
+.text-red{
+    color: var(--red);
+}
+
+/* NavBar */
+
+.navbar{
+    height: 70px;
+    transition: 0.5s;
+}
+
+.nav-link{
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    color: var(--white);
+}
+
+.logo{
+    width: 50px;
 }
