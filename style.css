@@ -160,3 +160,18 @@ body{
 .footer-custom{
     height: 300px;
 }
+
+/* Pagina Annunci */
+.accordion-item, .accordion-button{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--red);
+    background-color: var(--black);
+    box-shadow: none;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
