@@ -127,3 +127,30 @@ body{
     font-size: 50px;
     font-weight: 900;
 }
+
+/* Recensioni */
+
+.swiper{
+    height: 600px;
+}
+
+.card-review{
+    height: 250px;
+    width: 500px;
+    border: 2px solid var(--yellow);
+    border-radius: 25px;
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev{
+    color: var(--white);
+}
+
+.swiper-button-next{
+    color: var(--white);
+}
