@@ -16,7 +16,7 @@
 <body>
 <!-- NavBar -->
     <nav id="navbar" class="navbar navbar-expand-md bg-yellow fixed-top">
-        <div class="container-fluid">
+        <div id="collapse" class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img id="logoNavbar" src="./Media/logoBlack512px.png" alt="Logo aquila con pugnale nero,logo sito" class="logo">
             </a>
@@ -35,8 +35,7 @@
                         <a class="nav-link" href="#">Chi Siamo</a>
                     </li>
                 </ul>
-            </div>
-            <div class="logo">            
+                <div class="logo"></div>
             </div>
         </div>
     </nav>
@@ -53,41 +52,55 @@
             </div>
         </div>
     </header>
-<!-- Positioned -->
- <section class="container positioned">
-    <div class="row">
-        <div class="col-12 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
-            <i class="fa-solid fa-user-ninja fa-3x"></i>
-            <h3 class="my-3">We are assassins</h3>
-            <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Nemo atque temporibus ducimus eligendi sit commodi exercitationem ipsum qui earum!
-                Perspiciatis ratione vel commodi dolorem quasi. Laborum natus vel porro eos!
-            </p>
-        </div>
-        <div class="col-12 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
-            <i class="fa-solid fa-biohazard fa-3x"></i>
-            <h3 class="my-3">Nothing is true</h3>
-            <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Nemo atque temporibus ducimus eligendi sit commodi exercitationem ipsum qui earum!
-                Perspiciatis ratione vel commodi dolorem quasi. Laborum natus vel porro eos!
-            </p>
-        </div>
-        <div class="col-12 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
-            <i class="fa-solid fa-khanda fa-3x"></i>
-            <h3 class="my-3">Everything is permitted</h3>
-            <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Nemo atque temporibus ducimus eligendi sit commodi exercitationem ipsum qui earum!
-                Perspiciatis ratione vel commodi dolorem quasi. Laborum natus vel porro eos!
-            </p>
-        </div>   
-    </div>
-
- </section>
-<!-- Positioned END -->
 <!-- Header END -->
+<!-- Positioned -->
+    <section class="container positioned">
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
+                <i class="fa-solid fa-user-ninja fa-3x"></i>
+                <h3 class="my-3">We are assassins</h3>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nemo atque temporibus ducimus eligendi sit commodi exercitationem ipsum qui earum!
+                    Perspiciatis ratione vel commodi dolorem quasi. Laborum natus vel porro eos!
+                </p>
+            </div>
+            <div class="col-10 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
+                <i class="fa-solid fa-biohazard fa-3x"></i>
+                <h3 class="my-3">Nothing is true</h3>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nemo atque temporibus ducimus eligendi sit commodi exercitationem ipsum qui earum!
+                    Perspiciatis ratione vel commodi dolorem quasi. Laborum natus vel porro eos!
+                </p>
+            </div>
+            <div class="col-10 col-md-4 bg-yellow d-flex flex-column align-items-center col-custom">
+                <i class="fa-solid fa-khanda fa-3x"></i>
+                <h3 class="my-3">Everything is permitted</h3>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nemo atque temporibus ducimus eligendi sit commodi exercitationem ipsum qui earum!
+                    Perspiciatis ratione vel commodi dolorem quasi. Laborum natus vel porro eos!
+                </p>
+            </div>   
+        </div>
+    </section>
+<!-- Positioned END -->
+<!-- Numeri incrementali -->
+    <section class="container">
+        <div class="row">
+           <div class="col-12 col-md-6">
+                <img src="https://p4.wallpaperbetter.com/wallpaper/524/839/593/assassin-s-creed-revelations-ezio-altair-wallpaper-preview.jpg" alt="Gran Maestro Ezio Auditore da Firenze" class="img-fluid">
+           </div>
+           <div class="col-12 col-md-6">
+                <h3 class="text-center" >Un po' di numeri</h3>
+                <p><span class="number" id="firstNumber">0</span> Prodotti venduti</p>
+                <p><span class="number" id="secondNumber">0</span> Clienti soddisfatti</p>
+                <p><span class="number" id="thirdNumber">0</span> Consegne giornaliere</p>
+           </div> 
+        </div>
+    </section>
+<!-- Numeri incrementali END -->
 <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e68b4c7621.js" crossorigin="anonymous"></script>
 <!-- Bootstrap JS -->
