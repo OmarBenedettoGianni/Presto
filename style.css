@@ -154,3 +154,9 @@ body{
 .swiper-button-next{
     color: var(--white);
 }
+
+/* Footer */
+
+.footer-custom{
+    height: 300px;
+}
