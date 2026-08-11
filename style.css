@@ -175,3 +175,10 @@ body{
 .accordion-button:focus{
     box-shadow: none;
 }
+
+.card-custom{
+    height: 200px;
+    width: 25%;
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+}
