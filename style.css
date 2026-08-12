@@ -162,6 +162,10 @@ body{
 }
 
 /* Pagina Annunci */
+
+.navbar-custom{
+    height: 180px;
+}
 .accordion-item, .accordion-button{
     background-color: var(--black);
     color: var(--yellow);
@@ -176,8 +180,8 @@ body{
     box-shadow: none;
 }
 
-.card-custom{
-    /* height: 200px; */
+
+.card-custom {
     width: 30%;
     border: 2px solid var(--yellow);
     border-radius: 20px;
@@ -186,12 +190,131 @@ body{
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    padding: 15px; 
+    box-sizing: border-box;
+}
+.card-custom p {
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin: 5px 0;
+}
+
+.card-title-custom {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;       
+    overflow: hidden;          
+    text-overflow: ellipsis;   
+    font-size: 1.4rem; 
+}
+
+.card-category-custom {
+    font-size: clamp(0.75rem, 5.5cqw, 1rem);
 }
 
 .img-card{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.row-custom{
+
+@media (max-width: 767.98px) {
+    .card-title-custom {
+        font-size: 0.95rem; 
+    }
+    .card-category-custom {
+        font-size: 0.8rem;
+    }
+}
+
+/* Chi siamo */
+.circle{
+    height:300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.opener{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.moved{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    
+}
+
+.flip-card{
+    height: 500px;
+    width: 300px;
+}
+
+.flip-card:hover > .inner{
+    transform: rotateY(180deg);
+}
+
+.inner{
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--red);
+    border-radius: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.inner-face{
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    backface-visibility: hidden;
+}
+
+.inner-back{
+    height: 500px;
+    width: 300px;
+    position:absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 15px;
+    justify-content: center;
+
+
+}
+
+.vh-75{
     min-height: 75vh;
 }
+ 

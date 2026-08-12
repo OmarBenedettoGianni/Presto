@@ -41,9 +41,9 @@ fetch('./annunci.json').then((response)=>response.json()).then((data)=>{
         div.classList.add('card-custom');
         div.innerHTML=`
             <img src="https://picsum.photos/${300+i}" alt="immagine casuale" class="img-fluid img-card">
-            <p class="h2"title="${annuncio.name}">${truncateWord(annuncio.name)}</p>
-            <p class="h4">${annuncio.category}</p>
-            <p class="lead">${annuncio.price} €</p>
+            <p class="card-title-custom"title="${annuncio.name}">${truncateWord(annuncio.name)}</p>
+            <p class="card-category-custom">${annuncio.category}</p>
+            <p class="card-price-custom">${annuncio.price} €</p>
         `;
     cardWrapper.appendChild(div);
     });
